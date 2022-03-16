@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("images/bg-mobile.png");
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+main {
+    padding: 90px 15px;
+    min-width: 359px;
+}
+.icons {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+}
+.box-one {
+    background: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+    border-radius: 10px 85px 10px 10px;
+}
+.icons svg {
+    border-radius: 8px;
+}
+.box-two {
+    background: hsl(228, 56%, 26%);
+    margin-top: 30px;
+    border-radius: 8px;
+    color: white;
+    padding: 30px;
+    padding-bottom: 0;
+    text-align: center;
+}
+.storage {
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar {
+    background: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    height: 22px;
+    margin: 16px 0;
+    border: 2px hsl(229, 57%, 11%) solid;
+}
+.space-left {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    color: black;
+    width: 164px;
+    height: 54px;
+    text-align: center;
+    padding: 1px;
+    top: 23px;
+    font-weight: 800;
+    margin: auto;
+}
+.gradient-bar {
+    background: linear-gradient(to right,#ebcece, #d32183);
+    width: 80%;
+    height: 100%;
+    margin-top: auto;
+    border-radius: 10px;
+    text-align: end;
+}
+.circle {
+    width: 19px;
+    height: 17px;
+    background: white;
+    border-radius: 25px;
+    border: 2px pink solid;
+}
+
+@media (min-width: 376px){
+    html {
+        background: hsl(229, 57%, 11%);
+    }
+    body {
+        background: url("images/bg-desktop.png") no-repeat;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 300px 467px;
+        justify-content: center;
+        column-gap: 58px;
+    }
+    .box-two {
+        text-align: unset;
+    }
+    .space-left {
+        top: -153px;
+        left: 120px;
+    }
+}
